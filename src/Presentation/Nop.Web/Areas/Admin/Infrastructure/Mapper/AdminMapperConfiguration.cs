@@ -523,7 +523,9 @@ namespace Nop.Web.Areas.Admin.Infrastructure.Mapper
                 .ForMember(model => model.StockQuantityHistorySearchModel, options => options.Ignore())
                 .ForMember(model => model.StockQuantityStr, options => options.Ignore())
                 .ForMember(model => model.TierPriceSearchModel, options => options.Ignore())
-                .ForMember(model => model.InitialProductTags, options => options.Ignore());
+                .ForMember(model => model.InitialProductTags, options => options.Ignore())
+                .ForMember(model => model.Author, options => options.MapFrom(m => m.Author));
+
             CreateMap<ProductModel, Product>()
                 .ForMember(entity => entity.ApprovedRatingSum, options => options.Ignore())
                 .ForMember(entity => entity.ApprovedTotalReviews, options => options.Ignore())
@@ -542,7 +544,9 @@ namespace Nop.Web.Areas.Admin.Infrastructure.Mapper
                 .ForMember(entity => entity.ProductType, options => options.Ignore())
                 .ForMember(entity => entity.RecurringCyclePeriod, options => options.Ignore())
                 .ForMember(entity => entity.RentalPricePeriod, options => options.Ignore())
-                .ForMember(entity => entity.UpdatedOnUtc, options => options.Ignore());
+                .ForMember(entity => entity.UpdatedOnUtc, options => options.Ignore())
+                .ForMember(model => model.Author, options => options.MapFrom(m => m.Author));
+
 
             CreateMap<Product, DiscountProductModel>()
                 .ForMember(model => model.ProductId, options => options.Ignore())

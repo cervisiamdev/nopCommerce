@@ -15507,6 +15507,15 @@
   <LocaleResource Name="Admin.System.Templates.Product.IgnoredProductTypes.Hint">
     <Value>Specify ignored product types for this template.</Value>
   </LocaleResource>
+    <LocaleResource Name="Admin.Catalog.Products.Fields.Author">
+        <Value>Author</Value>
+    </LocaleResource>
+    <LocaleResource Name="Admin.System.Templates.Product.Name.Hint">
+        <Value>Enter the author.</Value>
+    </LocaleResource>
+    <LocaleResource Name="Admin.Catalog.Products.Fields.Author.Required">
+        <Value>Please provide an author.</Value>
+    </LocaleResource>
   <LocaleResource Name="Admin.System.Templates.Product.Name">
     <Value>Name</Value>
   </LocaleResource>

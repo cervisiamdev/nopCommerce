@@ -31,6 +31,11 @@ namespace Nop.Core.Domain.Catalog
         public bool VisibleIndividually { get; set; }
 
         /// <summary>
+        /// Gets or sets the author
+        /// </summary>
+        public string Author { get; set; }
+        
+        /// <summary>
         /// Gets or sets the name
         /// </summary>
         public string Name { get; set; }

@@ -94,6 +94,9 @@ namespace Nop.Web.Areas.Admin.Models.Catalog
         //<product type ID, list of supported product template IDs>
         public Dictionary<int, IList<SelectListItem>> ProductsTypesSupportedByProductTemplates { get; set; }
 
+        [NopResourceDisplayName("Admin.Catalog.Products.Fields.Author")]
+        public string Author { get; set; }
+        
         [NopResourceDisplayName("Admin.Catalog.Products.Fields.Name")]
         public string Name { get; set; }
 

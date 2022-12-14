@@ -97,6 +97,12 @@
                             @Html.Raw(Model.FullDescription)
                         </div>
                     }
+                    @if (!string.IsNullOrEmpty(Model.Author))
+                    {
+                       <div class="product-author">
+                         @Html.Raw(Model.Author)
+                       </div>
+                    }
                     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsEssentialBottom, additionalData = Model })
                 </div>
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsBeforeCollateral, additionalData = Model })

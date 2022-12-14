@@ -16,6 +16,10 @@ namespace Nop.Web.Areas.Admin.Validators.Catalog
                 .NotEmpty()
                 .WithMessageAwait(localizationService.GetResourceAsync("Admin.Catalog.Products.Fields.Name.Required"));
             
+            RuleFor(x => x.Author)
+                .NotEmpty()
+                .WithMessageAwait(localizationService.GetResourceAsync("Admin.Catalog.Products.Fields.Author.Required"));
+            
             RuleFor(x => x.SeName)
                 .Length(0, NopSeoDefaults.SearchEngineNameLength)
                 .WithMessageAwait(localizationService.GetResourceAsync("Admin.SEO.SeName.MaxLengthValidation"), NopSeoDefaults.SearchEngineNameLength);
